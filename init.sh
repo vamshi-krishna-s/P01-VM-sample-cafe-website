@@ -1,7 +1,9 @@
 #!/bin/bash
 
+echo "-----------------------START OF SCRIPT-----------------------------"
 echo "-----------------------Login as a sudo User: vagrant-----------------------------"
 sudo -i
+whoami
 
 
 echo "-----------------------update the deb package repository list and install dependencies-----------------------------"
@@ -37,6 +39,7 @@ systemctl restart apache2
 echo "ip address: "
 ip addr show | grep "scope global eth1"
 
+echo "-----------------------END OF SCRIPT-----------------------------"
 
 
 
