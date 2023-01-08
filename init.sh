@@ -35,7 +35,7 @@ echo "-----------------------restart the apache service-------------------------
 systemctl restart apache2
 
 echo "ip address: "
-ip addr show
+ip addr show | grep "scope global eth1"
 
 
 
